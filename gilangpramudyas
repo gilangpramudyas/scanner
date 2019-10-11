@@ -1,0 +1,44 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package gilangpramudyas;
+import java.util.Scanner;
+
+/**
+ *
+ * @author HP
+ */
+public class Nilai_Akhir {
+    public static void main (String[] args) {
+    Scanner input = new Scanner(System.in);
+    float kehadiran,praktek,uts,uas,NA;
+    System.out.print("masukkan nilai kehadiran:");
+    kehadiran = input.nextFloat();
+    System.out.print("masukkan nilai praktek:");
+    praktek = input.nextFloat();
+    System.out.print("masukkan nilai uts:");
+    uts = input.nextFloat();
+    System.out.print("masukkan nilai uas:");
+    uas = input.nextFloat();
+    NA = (kehadiran*5/100)+(praktek*25/100)+(uts*30/100)+(uas*40/100);
+    System.out.print("nilai akhir=" +NA);
+    if  (NA>=85)
+        System.out.println("A");
+    else if(NA>=80 && NA<85)
+        System.out.println("A-");
+     else if(NA>=75 && NA<80)
+        System.out.println("B+");
+     else if(NA>=70 && NA<75)
+        System.out.println("B-");
+     else if(NA>=60 && NA<65)
+        System.out.println("C+");
+     else if(NA>=55 && NA<60)
+        System.out.println("C-");
+     else if(NA>=50 && NA<55)
+        System.out.println("D");
+    else
+         System.out.println("e");
+    }
+}
